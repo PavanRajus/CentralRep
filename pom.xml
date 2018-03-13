@@ -13,35 +13,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <build>
-    <plugins>
-	  <plugin>
-	    <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.5.5.201112152213</version>
-		<configuration>
-		  <datafile>${basedir}/target/coverage-reports/jacoco-unit.exec</datafile>
-		  <datafile>${basedir}/target/coverage-reports/jacoco-unit.exec</datafile>
-		</configuration>
-		<executions>
-		  <execution>
-		    <id>jacoco-initialize</id>
-			<goals>
-			  <goal>prepare-agent</goal>
-			</goals>
-		  </execution>
-		</executions>
-		<executions>
-		  <execution>
-		    <id>jacoco-site</id>
-			<goals>
-			  <goal>report</goal>
-			</goals>
-		  </execution>
-		</executions>
-		</plugin>
-	</plugins>
-  </build>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
